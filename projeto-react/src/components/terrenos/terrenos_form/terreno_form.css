@@ -1,0 +1,214 @@
+/* terreno_view.css */
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-input {
+  margin-left: 5px;
+}
+
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.section-heading {
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.confrontacoes-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.confrontacao-group {
+  flex: 0 0 50%;
+  padding-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-container .button {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-update {
+  background-color: #87B344;
+  color: white;
+  margin-right: 10px;
+}
+
+.btn-delete {
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: #B34444;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn-delete:hover {
+  background-color: rgb(94, 0, 0);
+}
+
+.btn-next {
+  display: block;
+  padding: 10px 100px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #0089dc;
+  color: white;
+  margin: 20px auto;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-next:hover {
+      background-color: #0d1557;
+  }
+
+  .form-actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .atualizar-button {
+    width: auto;
+    margin: 10px; /* Adjust vertical margin */
+    background-color: #3252de;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .cancelar-button {
+    width: auto;
+    margin: 10px; /* Adjust vertical margin */
+    background-color: #3252de;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .apagar-button {
+    width: auto;
+    margin: 10px; /* Adjust vertical margin */
+    background-color: #af2929;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .seguinte-button {
+    width: auto;
+    margin: 10px; /* Adjust vertical margin */
+    background-color: #87b344;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .atualizar-button:hover {
+    color: #3252de;
+    background-color: white;
+    border-color: #3252de;
+  }
+  
+  .apagar-button:hover {
+    color: #af2929;
+    background-color: white;
+    border-color: #af2929;
+  }
+
+  .cancelar-button:hover {
+    color: #3252de;
+    background-color: white;
+    border-color: #3252de;
+  }
+
+  .seguinte-button:hover {
+    color: #87b344;
+    background-color: white;
+    border-color: #87b344;
+  }
+  @media (max-width: 767.98px) {
+    .form-header, .confrontacoes-header {
+      text-align: center;
+    }
+  
+    .form-actions {
+      text-align: center;
+    }
+  }

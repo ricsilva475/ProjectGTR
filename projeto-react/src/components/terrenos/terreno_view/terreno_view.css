@@ -1,0 +1,86 @@
+/* Existing styles for link buttons */
+
+.link-button {
+    width: auto;
+    margin: 10px; /* Adjust vertical margin */
+    background-color: #87b344;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.reset-button {
+    width: auto;
+    margin: 10px; /* Adjust vertical margin */
+    background-color: #af2929;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.link-button:hover {
+    color: #87b344;
+    background-color: white;
+    border-color: #87b344;
+}
+
+.reset-button:hover {
+    color: #af2929;
+    background-color: white;
+    border-color: #af2929;
+}
+
+.link-button-container, .reset-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.label-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust gap between label and input */
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .link-button, .reset-button {
+        width: calc(50% - 20px); /* Adjust width to leave some space between buttons */
+    }
+
+    .label-input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .label-input-container input {
+        padding: 10px;
+        width: calc(100% - 20px); /* Adjust input width to fill container minus padding */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px; /* Adjust margin between label and input */
+    }
+
+    .label-input-container label {
+        font-weight: bold;
+        margin-bottom: 5px; /* Adjust margin between labels and inputs */
+    }
+}

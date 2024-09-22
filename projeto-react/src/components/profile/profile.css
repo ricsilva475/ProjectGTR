@@ -1,0 +1,102 @@
+
+
+.profile-container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-update {
+    width: auto;
+    margin: 10px; /* Adjust vertical margin */
+    background-color: #87b344;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.password-button {
+    width: auto;
+    margin: 10px; /* Adjust vertical margin */
+    background-color: #26308a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-update:hover {
+    color: #87b344;
+    background-color: white;
+    border-color: #87b344;
+}
+
+.password-button:hover {
+    color: #26308a;
+    background-color: white;
+    border-color: #26308a;
+}
+
+.btn-update-container, .password-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-input.input-error {
+    border: 2px solid red;
+  }
+
+@media screen and (min-width: 768px) {
+    .profile-form {
+        grid-template-columns: 1fr 1fr;
+    }
+}

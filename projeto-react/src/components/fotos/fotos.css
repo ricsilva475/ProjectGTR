@@ -1,0 +1,117 @@
+.fotos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    align-items: center;
+    height: 100vh;
+    padding-top: 40px; /* Adds some space at the top */
+  }
+  
+  .fotos-container h1 {
+    font-size: 2.5em; /* Makes the font larger */
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    
+  }
+
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-wrapper img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border: 2px solid black;
+  }
+  
+  .delete-button-wrapper {
+    display: none;
+    background-color: red;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .image-wrapper:hover .delete-button-wrapper {
+    display: block;
+  }
+  
+  .delete-button {
+    color: white;
+    width: 20%; /* Make the button shorter */
+    margin: 0 auto; /* Center the button */
+    padding: 5px;
+  }
+
+  #file-upload {
+    display: none;
+  }
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .image-wrapper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FC427B;
+    border-radius: 10px;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    margin: 0 5px;
+    cursor: pointer;
+    border: none; /* Remove a borda */
+  }
+  
+  .thumbnail-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .main-image {
+    width: 200px; /* Tamanho maior para a imagem central */
+    height: 200px; /* Tamanho maior para a imagem central */
+  }
+  
+  .active {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem ativa */
+    z-index: 1; /* Garante que a imagem ativa fique sobreposta às outras */
+  }
+  

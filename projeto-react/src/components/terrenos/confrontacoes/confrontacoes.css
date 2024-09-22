@@ -1,0 +1,207 @@
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Filter input */
+.conf-input {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.conf-input::placeholder {
+  color: #aaa;
+}
+
+.conf-input:focus {
+  outline: none;
+  border-color: #87B344;
+  box-shadow: 0 0 5px rgba(46, 78, 50, 0.5);
+}
+
+.marker-item {
+  background-color: #cfcfcf7c;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.marker-item:hover {
+  background-color: #f2f2f2;
+}
+
+.expanded-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.marker-item:focus {
+  outline: none;
+  border-color: #87B344;
+    box-shadow: 0 0 5px rgba(46, 78, 50, 0.5);
+}
+
+.additional-info {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.save-button,
+.return-button {
+  width: 150px;
+  margin: 0 10px;
+  background-color: #87b344;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.return-button {
+  background-color: #26308a;
+}
+
+.save-button:hover,
+.return-button:hover,
+.save-button:focus,
+.return-button:focus {
+  background-color: transparent;
+  border-color: currentColor;
+}
+
+.save-button:focus,
+.return-button:focus {
+  outline: none;
+}
+
+.save-button:hover {
+  color: #87b344;
+  border-color: #87b344;
+}
+
+.return-button:hover {
+  color: #26308a;
+  border-color: #26308a;
+}
+
+.no-confrontacoes-message {
+  text-align: center;
+}
+
+.no-confrontacoes-text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.no-confrontacoes-button {
+  width: 150px;
+  background-color: #26308a;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.no-confrontacoes-button:hover,
+.no-confrontacoes-button:focus {
+  background-color: transparent;
+  border-color: currentColor;
+}
+
+.no-confrontacoes-button:focus {
+  outline: none;
+}
+
+.no-confrontacoes-button:hover {
+  color: #26308a;
+  border-color: #26308a;
+}
+
+.vizinho-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+.add-vizinho-button {
+  padding: 8px 16px;
+  background-color: #26308a;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-vizinho-button:hover {
+  color: #26308a;
+  background-color: #fff;
+  border: 1px solid #26308a;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .map-container,
+  .markers-list {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  .button-container {
+    padding-bottom: 30px;
+  }
+
+  .save-button,
+  .return-button {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-wrapper {
+    flex-direction: row;
+  }
+
+  .map-container,
+  .markers-list {
+    flex-basis: 47%;
+    margin-left: 2.3em;
+    margin-right: 1.15em;
+  }
+}

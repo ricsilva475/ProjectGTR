@@ -1,0 +1,133 @@
+/* Navbar spacer */
+.navbar-spacer {
+    height: 20px; 
+}
+
+/* Welcome text */
+.welcome-text {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 20px; 
+}
+
+.numTerrenos {
+    font-size: 1.5rem;
+    font-weight:normal;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+/* Card grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-content: center;
+    padding: 10px; 
+}
+
+.card {
+    background-color: #cfcfcf7c;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    height: 250px; 
+    overflow: hidden; 
+}
+
+.card:hover {
+    background-color: #f2f2f2;
+    transition: 0.2s ease-in;
+}
+
+.card-content {
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+.card-image {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-bottom: 1rem;
+}
+
+.centered-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Filter input */
+.filter-input {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px!important; /* Set initial width for desktop view */
+}
+
+.filter-input::placeholder {
+    color: #aaa;
+}
+
+.filter-input:focus {
+    outline: none;
+    border-color: #87B344;
+    box-shadow: 0 0 5px rgba(46, 78, 50, 0.5);
+}
+
+
+.filter-select {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+    color: #aaa; 
+}
+
+.filter-select option {
+    color: black;
+}
+
+.filter-select option[value=""] {
+    color: #aaa; 
+}
+
+
+.filter-select:focus {
+    outline: none;
+    border-color: #87B344;
+    box-shadow: 0 0 5px rgba(46, 78, 50, 0.5);
+}
+
+@media (max-width: 768px) {
+    .filter-input, .filter-select {
+        margin-bottom: 10px;
+        width: 100%!important; 
+    }
+    .filter-container {
+        flex-wrap: wrap;
+    }
+}

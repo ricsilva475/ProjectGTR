@@ -1,0 +1,75 @@
+
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #87B344;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #6C9347;
+}
+
+.modal-custom-size .modal-dialog {
+  max-width: 90vw;
+}
+
+.modal-body {
+  overflow-x: hidden;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.campos {
+  margin-left: 60px;
+}
+
+.add-terreno-form h1 {
+    font-size: 2.3em;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .form-group {
+    padding: 0 30px;
+  }
+  
+  .form-label {
+    color: black;
+  }
+  
+  .get-freguesia-btn {
+    margin: 2px;
+  }
+  
+  .wide-label {
+    width: 100%;
+  }
+  
+  .confrontacao-input {
+    padding: 0 30px;
+  }
+
+  .required {
+    color: red;
+    font-size: 1.5em;
+  }
+
+  .margin-left-30 {
+    margin-left: 60px;
+  }
+
+  
+  @media only screen and (max-width: 800px) {
+    .campos {
+      margin-left: 0px;
+    }
+  }

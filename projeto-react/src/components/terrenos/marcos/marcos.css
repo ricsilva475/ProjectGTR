@@ -1,0 +1,256 @@
+.header-title {
+  font-size: 2.3em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-container {
+  margin-left: 2.3em;
+  margin-right: 1.15em;
+}
+
+.markers-list {
+  margin-left: 1.15em;
+  margin-right: 2.3em;
+  
+}
+
+.list-title {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.markers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: 566px;
+  overflow-y: auto;
+}
+
+.marker-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.marker-name {
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.marker-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marker-coordinates,
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch-container {
+  margin-left: auto; /* This will push the switch container to the right */
+}
+
+.marker-description {
+  text-align: center;
+  align-items: center;
+}
+
+.marker-description-label {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.marker-description-input {
+  margin-left: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.marker-description-input::placeholder {
+  color: #aaa;
+}
+
+.marker-description-input:focus {
+  outline: none;
+  border-color: #87B344;
+  box-shadow: 0 0 5px rgba(46, 78, 50, 0.5);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.save-button,
+.return-button {
+  width: 150px;
+  margin: 0 10px;
+  background-color: #87b344;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.return-button {
+  background-color: #26308a;
+}
+
+.save-button:hover,
+.return-button:hover,
+.save-button:focus,
+.return-button:focus {
+  background-color: #6b8e2d;
+  border-color: #6b8e2d;
+}
+
+.save-button:focus,
+.return-button:focus {
+  outline: none;
+}
+
+.save-button:hover {
+  color: #87b344;
+  border-color: #87b344;
+}
+
+.return-button:hover {
+  color: #26308a;
+  border-color: #26308a;
+}
+
+.no-markers-message {
+  text-align: center;
+}
+
+.no-markers-text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.no-markers-button {
+  width: 150px;
+  background-color: #26308a;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.no-markers-button:hover,
+.no-markers-button:focus {
+  background-color: transparent;
+  border-color: currentColor;
+}
+
+.no-markers-button:focus {
+  outline: none;
+}
+
+.no-markers-button:hover {
+  color: #26308a;
+  border-color: #26308a;
+}
+
+
+@media screen and (max-width: 767px) {
+  .map-container,
+  .markers-list {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  .button-container {
+    padding-bottom: 30px;
+  }
+
+  .marker-description {
+    margin-top: -1em;
+  }
+
+  .markers-grid {
+    grid-template-columns: 1fr;
+    justify-content: center; 
+  }
+
+  .marker-details {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+  }
+
+  .switch-container {
+    margin-left: 0; 
+    margin-top: 10px;
+  }
+
+  .filter-input {
+    margin-bottom: 10px;
+    width: 100%!important; 
+  }
+
+  .filter-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-wrapper {
+    flex-direction: row;
+  }
+
+  .map-container,
+  .markers-list {
+    flex-basis: 47%;
+    margin-left: 2.3em;
+    margin-right: 1.15em;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+.foto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 10px; 
+  justify-content: center;
+  padding: 10px; 
+}
+
+.image-wrapper {
+  /* Outros estilos */
+  border: none; /* Remove a borda */
+}
